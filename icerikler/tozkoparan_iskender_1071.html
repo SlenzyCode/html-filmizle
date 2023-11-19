@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slenzy - Film İçerikleri</title>
+    <style>
+        body {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        .text-3 {
+            padding: 20px;
+            color: #d4d4d4;
+            flex-basis: 100%;
+            background-color: #2d2d2d;
+        }
+
+
+        html {
+            cursor: url("https://slenzy.neocities.org/imlec1.png"), auto;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html"></a>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.body.innerHTML += `
+        <div class="container">    
+            <div class="text-3">
+                <a href="../index.html">Geri Dön</a>
+                <span class="typing"></span>
+                <p class="hljs-keyword"></p>
+            </div>
+        </div>`;
+
+        var typed = new Typed('.hljs-keyword', {
+            strings: [`<br><br>Tozkoparan Iskender: 1071 izle, Tozkoparan İskender ve arkadaşları, zamanın derinliklerinden süzülerek 26 Ağustos 1071 tarihine, tarihin kalbindeki Malazgirt Ovası'na varırlar. Bulundukları yeri anlamakta zorlanan bu zaman yolcuları, etraflarına yağan ateşli Türk oklarıyla birlikte, kendilerini bir Türk baskınına şahit olarak bulurlar. Bu görkemli sahne, Sultan Alparslan'ın, Malazgirt Zaferi'nden sadece yarım gün önce, gizemli bir hızla gerçekleştirdiği ani baskına aittir. Tozkoparanlar, birkaç saat sonra Sultan Alparslan'ın liderliğindeki tarihi Malazgirt Meydan Muharebesi'ne tanıklık edecek olmanın heyecanını yaşarlar. Ancak, kahramanlarımızı bekleyen kötü bir sürpriz vardır. Bizanslı komutan Niko'nun, Sultan Alparslan'a karşı kurduğu hain planlar, Tozkoparanların seyahatlerini gölgelendirir. Niko'nun ihanet dolu entrikaları, geçmişin karanlık koridorlarında gizli bir tehdit oluşturur. Tozkoparan İskender ve dostları, tarihi döneme damgasını vuracak bu büyük çatışmanın ortasında, beklenmedik tehlikelerle yüzleşmeye hazır hale gelirler.`],
+            typeSpeed: 3,
+            backSpeed: 80,
+            loop: false,
+        });
+    </script>
+</body>
+
+</html>
