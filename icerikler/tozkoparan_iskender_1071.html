@@ -28,7 +28,16 @@
             margin-bottom: 20px;
             display: flex;
         }
-
+        .hljs {
+            display: block;
+            overflow-x: auto;
+            padding: 0.5em;
+            background: #1a1a1a;
+        }
+        
+        .hljs-keyword {
+            color: #e7be70;
+        }
         .text-3 {
             padding: 20px;
             color: #d4d4d4;
@@ -56,7 +65,7 @@
             </div>
         </div>`;
 
-        var typed = new Typed('a', {
+        var typed = new Typed('.hljs-keyword', {
             strings: [`<br><br>Tozkoparan Iskender: 1071 izle, Tozkoparan İskender ve arkadaşları, zamanın derinliklerinden süzülerek 26 Ağustos 1071 tarihine, tarihin kalbindeki Malazgirt Ovası'na varırlar. Bulundukları yeri anlamakta zorlanan bu zaman yolcuları, etraflarına yağan ateşli Türk oklarıyla birlikte, kendilerini bir Türk baskınına şahit olarak bulurlar. Bu görkemli sahne, Sultan Alparslan'ın, Malazgirt Zaferi'nden sadece yarım gün önce, gizemli bir hızla gerçekleştirdiği ani baskına aittir. Tozkoparanlar, birkaç saat sonra Sultan Alparslan'ın liderliğindeki tarihi Malazgirt Meydan Muharebesi'ne tanıklık edecek olmanın heyecanını yaşarlar. Ancak, kahramanlarımızı bekleyen kötü bir sürpriz vardır. Bizanslı komutan Niko'nun, Sultan Alparslan'a karşı kurduğu hain planlar, Tozkoparanların seyahatlerini gölgelendirir. Niko'nun ihanet dolu entrikaları, geçmişin karanlık koridorlarında gizli bir tehdit oluşturur. Tozkoparan İskender ve dostları, tarihi döneme damgasını vuracak bu büyük çatışmanın ortasında, beklenmedik tehlikelerle yüzleşmeye hazır hale gelirler.`],
             typeSpeed: 3,
             backSpeed: 80,
